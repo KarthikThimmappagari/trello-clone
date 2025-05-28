@@ -1,0 +1,53 @@
+.header {
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 8px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* This ensures vertical alignment */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    /* Aligns logo image and text vertically */
+    gap: 10px;
+    /* Adds consistent spacing between logo and text */
+}
+
+.logo {
+    /* font-size: 1.5rem;
+    font-weight: 700; */
+    margin: 0;
+    /* Remove default margins */
+}
+
+.logoImg {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 8px;
+    /* Remove margin-bottom as it was pushing elements down */
+}
+
+.reset-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 500;
+    /* Remove margin-bottom as it was pushing the button down */
+}
+
+.reset-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}

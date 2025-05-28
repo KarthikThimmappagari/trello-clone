@@ -1,0 +1,79 @@
+.add-list {
+    width: 272px;
+    flex-shrink: 0;
+}
+
+.add-list.adding {
+    background-color: #ebecf0;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+.add-list-button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.add-list-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.add-list-button svg {
+    margin-right: 4px;
+}
+
+.add-list-input {
+    width: 100%;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 0 rgba(9, 30, 66, 0.25);
+}
+
+.add-list-input:focus {
+    outline: 2px solid #0079bf;
+}
+
+.add-list-actions {
+    display: flex;
+    align-items: center;
+}
+
+.add-list-confirm {
+    background-color: #5aac44;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.add-list-confirm:hover {
+    background-color: #61bd4f;
+}
+
+.add-list-cancel {
+    background: none;
+    border: none;
+    color: #6b778c;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0 6px;
+}
+
+.add-list-cancel:hover {
+    color: #172b4d;
+}

@@ -1,0 +1,44 @@
+.card {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(9, 30, 66, 0.25);
+    padding: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.card:hover {
+    background-color: #f4f5f7;
+}
+
+.card-content h4 {
+    font-size: 14px;
+    margin-bottom: 4px;
+    font-weight: 400;
+}
+
+.due-date {
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background-color: #61bd4f;
+    color: white;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+
+.due-date.overdue {
+    background-color: #eb5a46;
+}
+
+.card-description-preview {
+    font-size: 12px;
+    color: #5e6c84;
+    margin-top: 6px;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+}
