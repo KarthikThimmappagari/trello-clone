@@ -1,12 +1,84 @@
-# React + Vite
+Here's the refined README.md file with all your requested changes incorporated:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+```markdown
+# Trello Clone - Task Management Board
 
-Currently, two official plugins are available:
+![Screenshot 2025-05-29 002439](https://github.com/user-attachments/assets/7e43af22-6c0c-4bb9-bb87-5f684ad7026a)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A responsive Trello-like task management board built with React that allows users to organize tasks with drag-and-drop functionality. Data persists in localStorage for a seamless user experience.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🎯 **Drag-and-Drop Interface**: Intuitive card and list rearrangement
+- 📝 **Task Management**: Create, edit, and delete cards with details
+- 📋 **List Organization**: Add, rename, and remove task lists
+- 💾 **Automatic Saving**: All changes persist in localStorage
+- 🔄 **Reset Option**: Clear all data with one click
+- 📱 **Responsive Design**: Works on desktop and mobile devices
+
+## Project Structure
+
+```
+src/
+├── components/            # React components
+│   ├── Board.jsx          # Main board container
+│   ├── List.jsx           # Individual list component
+│   ├── Card.jsx           # Task card component
+│   ├── AddList.jsx        # Component for adding new lists
+│   ├── CardModal.jsx      # Modal to view/edit card details
+│   └── Header.jsx         # Header with reset functionality
+├── hooks/
+│   └── useLocalStorage.js # Custom hook for localStorage
+├── styles/                # Component-specific styles
+├── App.jsx                # Root component
+└── main.jsx               # Application entry point
+```
+
+## Technologies Used
+
+- **Frontend**: React.js
+- **State Management**: React Hooks
+- **Drag-and-Drop**: react-beautiful-dnd
+- **Styling**: CSS Modules
+- **Icons**: react-icons
+- **Date Handling**: date-fns
+- **ID Generation**: uuid
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/trello-clone.git
+   cd trello-clone
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser at:
+   ```
+   http://localhost:3000
+   ```
+
+## How to Use
+
+### Managing Lists
+- **Add List**: Click "+ Add another list" button
+- **Edit Title**: Click on any list title to edit
+- **Delete List**: Click the ✕ icon in list header
+
+### Managing Cards
+- **Add Card**: Type in "Add a card..." input at list bottom
+- **Edit Card**: Click any card to open details modal
+- **Move Card**: Drag and drop within or between lists
+- **Delete Card**: Use delete button in card modal
+
+### Board Controls
+- **Reset Board**: Use "Reset Board" button in header to clear all data
